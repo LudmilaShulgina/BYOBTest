@@ -16,7 +16,7 @@ jobs:
         with:
           NAME: time
           LABEL: 'Updated at'
-          STATUS: ${{ steps.date.outputs.data }}
+          STATUS: ${{ date }}
           COLOR: 00EEFF
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Machine Badge
